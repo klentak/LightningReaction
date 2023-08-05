@@ -79,9 +79,8 @@
 		A7FEEA772A7C36A5007E8F40 /* LightningReaction */ = {
 			isa = PBXGroup;
 			children = (
+				A7FEEA992A7C440A007E8F40 /* Views */,
 				A7FEEA7C2A7C36A5007E8F40 /* LightningReactionApp.swift */,
-				A7FEEA7E2A7C36A5007E8F40 /* ContentView.swift */,
-				A7FEEA802A7C36A5007E8F40 /* ImmersiveView.swift */,
 				A7FEEA822A7C36AA007E8F40 /* Assets.xcassets */,
 				A7FEEA842A7C36AA007E8F40 /* Preview Content */,
 			);
@@ -110,6 +109,23 @@
 				A7FEEA8F2A7C36AB007E8F40 /* LightningReactionTests.swift */,
 			);
 			path = LightningReactionTests;
+			sourceTree = "<group>";
+		};
+		A7FEEA992A7C440A007E8F40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7FEEA9A2A7C449E007E8F40 /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7FEEA9A2A7C449E007E8F40 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				A7FEEA7E2A7C36A5007E8F40 /* ContentView.swift */,
+				A7FEEA802A7C36A5007E8F40 /* ImmersiveView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
