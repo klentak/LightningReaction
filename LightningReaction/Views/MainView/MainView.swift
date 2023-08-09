@@ -9,12 +9,9 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
-struct ContentView: View {
-
+struct MainView: View {
+    @EnvironmentObject var gameModel: GameModel
     @State var showImmersiveSpace = false
-
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
         NavigationSplitView {
@@ -49,22 +46,14 @@ struct ContentView: View {
             .navigationTitle("Lightinng Reaction")
             .padding()
         }
-        .onChange(of: showImmersiveSpace) { _, newValue in
-            Task {
-                if newValue {
-                    await openImmersiveSpace(id: "ImmersiveSpace")
-                } else {
-                    await dismissImmersiveSpace()
-                }
-            }
-        }
     }
 
     func play() {
-        print("Test")
+        gameModel.isPlaying = true
     }
 }
 
 #Preview {
-    ContentView()
+    MainView()
+        .environmentObject(GameModel())
 }

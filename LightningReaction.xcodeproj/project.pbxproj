@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A79A62ED2A840BBD003CF79F /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A62EC2A840BBD003CF79F /* Point.swift */; };
+		A7CBF3772A7FE25300C4CB27 /* LightningReaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CBF3762A7FE25300C4CB27 /* LightningReaction.swift */; };
+		A7CBF3792A7FE29900C4CB27 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CBF3782A7FE29900C4CB27 /* GameModel.swift */; };
+		A7CBF37C2A7FE55A00C4CB27 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CBF37B2A7FE55A00C4CB27 /* GameView.swift */; };
 		A7FEEA7B2A7C36A5007E8F40 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = A7FEEA7A2A7C36A5007E8F40 /* RealityKitContent */; };
 		A7FEEA7D2A7C36A5007E8F40 /* LightningReactionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEEA7C2A7C36A5007E8F40 /* LightningReactionApp.swift */; };
-		A7FEEA7F2A7C36A5007E8F40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEEA7E2A7C36A5007E8F40 /* ContentView.swift */; };
-		A7FEEA812A7C36A5007E8F40 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEEA802A7C36A5007E8F40 /* ImmersiveView.swift */; };
+		A7FEEA7F2A7C36A5007E8F40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEEA7E2A7C36A5007E8F40 /* MainView.swift */; };
 		A7FEEA832A7C36AA007E8F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FEEA822A7C36AA007E8F40 /* Assets.xcassets */; };
 		A7FEEA862A7C36AA007E8F40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FEEA852A7C36AA007E8F40 /* Preview Assets.xcassets */; };
 		A7FEEA902A7C36AB007E8F40 /* LightningReactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FEEA8F2A7C36AB007E8F40 /* LightningReactionTests.swift */; };
@@ -27,11 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A79A62EC2A840BBD003CF79F /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		A7CBF3762A7FE25300C4CB27 /* LightningReaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningReaction.swift; sourceTree = "<group>"; };
+		A7CBF3782A7FE29900C4CB27 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		A7CBF37B2A7FE55A00C4CB27 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		A7FEEA752A7C36A5007E8F40 /* LightningReaction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightningReaction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FEEA792A7C36A5007E8F40 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		A7FEEA7C2A7C36A5007E8F40 /* LightningReactionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningReactionApp.swift; sourceTree = "<group>"; };
-		A7FEEA7E2A7C36A5007E8F40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A7FEEA802A7C36A5007E8F40 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		A7FEEA7E2A7C36A5007E8F40 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A7FEEA822A7C36AA007E8F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7FEEA852A7C36AA007E8F40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7FEEA8B2A7C36AB007E8F40 /* LightningReactionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightningReactionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A79A62EB2A840203003CF79F /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				A79A62EC2A840BBD003CF79F /* Point.swift */,
+			);
+			path = Gameplay;
+			sourceTree = "<group>";
+		};
+		A7CBF37A2A7FE54400C4CB27 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				A7CBF37B2A7FE55A00C4CB27 /* GameView.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
 		A7FEEA6C2A7C36A5007E8F40 = {
 			isa = PBXGroup;
 			children = (
@@ -79,8 +101,11 @@
 		A7FEEA772A7C36A5007E8F40 /* LightningReaction */ = {
 			isa = PBXGroup;
 			children = (
+				A79A62EB2A840203003CF79F /* Gameplay */,
 				A7FEEA992A7C440A007E8F40 /* Views */,
 				A7FEEA7C2A7C36A5007E8F40 /* LightningReactionApp.swift */,
+				A7CBF3762A7FE25300C4CB27 /* LightningReaction.swift */,
+				A7CBF3782A7FE29900C4CB27 /* GameModel.swift */,
 				A7FEEA822A7C36AA007E8F40 /* Assets.xcassets */,
 				A7FEEA842A7C36AA007E8F40 /* Preview Content */,
 			);
@@ -114,6 +139,7 @@
 		A7FEEA992A7C440A007E8F40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7CBF37A2A7FE54400C4CB27 /* GameView */,
 				A7FEEA9A2A7C449E007E8F40 /* MainView */,
 			);
 			path = Views;
@@ -122,8 +148,7 @@
 		A7FEEA9A2A7C449E007E8F40 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				A7FEEA7E2A7C36A5007E8F40 /* ContentView.swift */,
-				A7FEEA802A7C36A5007E8F40 /* ImmersiveView.swift */,
+				A7FEEA7E2A7C36A5007E8F40 /* MainView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -231,9 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7FEEA7F2A7C36A5007E8F40 /* ContentView.swift in Sources */,
+				A7CBF3792A7FE29900C4CB27 /* GameModel.swift in Sources */,
+				A7FEEA7F2A7C36A5007E8F40 /* MainView.swift in Sources */,
+				A79A62ED2A840BBD003CF79F /* Point.swift in Sources */,
 				A7FEEA7D2A7C36A5007E8F40 /* LightningReactionApp.swift in Sources */,
-				A7FEEA812A7C36A5007E8F40 /* ImmersiveView.swift in Sources */,
+				A7CBF3772A7FE25300C4CB27 /* LightningReaction.swift in Sources */,
+				A7CBF37C2A7FE55A00C4CB27 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +414,7 @@
 				DEVELOPMENT_TEAM = JND6WKUXP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LightningReaction;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,6 +441,7 @@
 				DEVELOPMENT_TEAM = JND6WKUXP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LightningReaction;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
