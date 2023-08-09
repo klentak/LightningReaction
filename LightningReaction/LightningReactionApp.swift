@@ -9,13 +9,12 @@ import SwiftUI
 
 @main
 struct LightningReactionApp: App {
+    @StateObject private var gameModel = GameModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+            LightningReaction()
+                .environmentObject(gameModel)
         }
     }
 }
